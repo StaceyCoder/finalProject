@@ -13,7 +13,7 @@ app.set("view engine", "ejs")
 // app.use(bodyParser.json());
 
 // rapid.call('NasaAPI', 'getPictureOfTheDay', {
-//   'X-Mashape-Key', 'PpO0nQ7fdwmshOSy3sCTW5CwPnuZp1p6ci2jsnteOOU3ghqHjh'
+//   'X-Mashape-Key', 'XXXXX'
 //   'X-Mashape-Host', 'spoonacular-recipe-food-nutrition-v1.p.mashape.com'
 // });
 
@@ -25,7 +25,7 @@ var food;
 // unirest.get("https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/food/videos/search?query=" + {foodSearch} + "&minLength=0&maxLength=999&offset=0&number=10")
 
 unirest.get("https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/food/videos/search?query=smoothie&minLength=0&maxLength=999&offset=0&number=10")
-.header("X-Mashape-Key", "PpO0nQ7fdwmshOSy3sCTW5CwPnuZp1p6ci2jsnteOOU3ghqHjh")
+.header("X-Mashape-Key", "XXXXX")
 .header("X-Mashape-Host", "spoonacular-recipe-food-nutrition-v1.p.mashape.com")
 .end(function (result) {
   console.log(result.status, result.headers, result.body);
