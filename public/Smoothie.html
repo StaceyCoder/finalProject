@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<head>
+  <title>Power Green Smoothie - so simple + tasty plant-base diet</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<html>
+<body>
+
+
+<!-- <div class="container"> -->
+  <div class="title">
+    <header>
+    <ul>
+      <!-- <li><a href="">Explore</a></li> -->
+      <li><a href="http://localhost:3000/smoothie">Smoothie Recipes</a></li>
+      <!-- <li><a href="">Login</a></li> -->
+    </ul>
+    <header>
+  </div>
+  <div class="picFruit">
+    <img src="fruit.jpg">
+  </div>
+
+  <!-- Nutrition info -->
+
+
+  <div id="my_container" class="fatsecret_container">
+
+<h1>Pick a Fruit or Vegetables</h1>
+
+  </div>
+
+
+  <script>
+  fatsecret.setContainer("my_container");
+  fatsecret.setCanvas("home");
+  </script>
+
+  <script>fatsecret.variables.navOptions = fatsecret.navFeatures.home | fatsecret.navFeatures.diet_calendar;</script>
+  <script src="http://platform.fatsecret.com/js?key=1edce8b242694942ab5d206395e8aa80&auto_load=true"></script>
+
+
+
+
+<!--- Order Drinks --------->
+<div class="customer">
+
+<div class="smoothieDrinkContainer">
+  <h4>Pick your Smoothie</h4>
+
+  <div class="customerOrder" id="order">
+    <fieldset>
+      <label class="thisName">Name:</label><input type="text" id="customerName"></input>
+    </fieldset>
+
+ <fieldset>
+    <label id="drinkSize">Drink size:</label>
+    <select id="size">
+      <option></option>
+      <option>xsmall</option>
+      <option>small</option>
+      <option>medium</option>
+      <option>large</option>
+      <option>xlarge</option>
+    </select>
+  </fieldset>
+
+
+<!--
+  <fieldset>
+    <label>Topping</label>
+  </fieldset>
+  <fieldset>
+    <label>Small</label>
+    <input type="checkbox" id="small">
+    <label>Medium</label>
+    <input type="checkbox" id="medium">
+    <label>Large</label>
+    <input type="checkbox" id="large">
+  </fieldset> -->
+
+
+  <!-- <fieldset>
+    <label>Result: </label>
+    <span id="result"></span>
+  </fieldset>
+  <button id="btn">Order</button> -->
+
+    <!-- Custom checkbox -->
+      <fieldset>
+      <h3>PICK YOUR FLAVOR</h3>
+
+      <!-- Fruits -->
+
+      <label class="container">Apple
+        <input type="checkbox" checked="checked" id="Apple">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">Banana
+        <input type="checkbox" id="Banana">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">Strawberry
+        <input type="checkbox"id="Strawberry">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">Blueberry
+        <input type="checkbox" id="Blueberry">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">Cherry
+        <input type="checkbox" id="Cherry">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">Coconut
+        <input type="checkbox"id="Coconut">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">Grape
+        <input type="checkbox" id="Grape">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">Guava
+        <input type="checkbox" id="Guava">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">Cucumber
+        <input type="checkbox"id="Cucumber">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">Avocado
+        <input type="checkbox" id="Avocado">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">Cranberry
+        <input type="checkbox" id="Cranberry">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">Mango
+        <input type="checkbox"id="Mango">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">Orange
+        <input type="checkbox" id="Orange">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">Papaya
+        <input type="checkbox" id="Papaya">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">Peach
+        <input type="checkbox"id="Peach">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">Pineapple
+        <input type="checkbox" id="Pineapple">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">Raspberry
+        <input type="checkbox"id="Raspberry">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">Pomegranate
+        <input type="checkbox" id="Pomegranate">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">Watermelon
+        <input type="checkbox" id="Watermelon">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">Cantalope
+        <input type="checkbox"id="Cantalope">
+        <span class="checkmark"></span>
+      </label>
+
+
+<!-- Vegetables -->
+
+<label class="container">Celery
+  <input type="checkbox" id="Celery">
+  <span class="checkmark"></span>
+</label>
+<label class="container">Kale
+  <input type="checkbox"id="Kale">
+  <span class="checkmark"></span>
+</label>
+<label class="container">Broccoli
+  <input type="checkbox" id="Broccoli">
+  <span class="checkmark"></span>
+</label>
+<label class="container">Tomato
+  <input type="checkbox" id="Tomato">
+  <span class="checkmark"></span>
+</label>
+<label class="container">Pumkin
+  <input type="checkbox"id="Pumkin">
+  <span class="checkmark"></span>
+</label>
+<label class="container">Ginger
+  <input type="checkbox" id="Ginger">
+  <span class="checkmark"></span>
+</label>
+<label class="container">Spinach
+  <input type="checkbox" id="Spinach">
+  <span class="checkmark"></span>
+</label>
+<label class="container">Taro
+  <input type="checkbox"id="Taro">
+  <span class="checkmark"></span>
+</label>
+
+</fieldset>
+
+      <!-- <fieldset>
+            Price: <span id="result"></span>
+      </fieldset>
+      <button type="btn">Order</button> -->
+
+      <fieldset class="orderBtn">
+        <!-- <label>Price: </label> -->
+        <span id="result2"></span>
+        <span id="result"></span>
+        <br><br>
+        <button id="btn">Order</button>
+      </fieldset>
+
+</div>
+
+</div>
+<!-- </div> -->
+
+<!-- <input id="food">
+<button id="btn2">Submit</button> -->
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+<!-- <script type="text/javascript">
+$('#btn2').click(function(){
+let food = $('#food').val()
+$('#spoonacular-ingredients').html(food)
+})
+
+ var spoonacularServings = 1;
+
+
+</script>
+
+
+<script type="text/javascript" src="https://spoonacular.com/cdn/spoonacular-1.6.min.js"></script> -->
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript">
+
+$("#size").change(function(){
+let size = $("#size").val();
+
+var sizes = {
+xsmall: 2.99,
+small: 6.99,
+medium: 7.99,
+large: 10.99,
+xlarge: 11.99
+}
+
+$("#result2").html(sizes[size]);
+</script>
+
+
+<script type="text/javascript">
+    $("#btn").click(function(){
+      if($("#Apple").is(":checked")){
+      $("#result").html("You ordered Apple");
+    } if($("#Banana").is(":checked")){
+      // put append to not override .html, other wise, it won't show up.
+      $("#result").append("<br>You ordered Banana");
+    }
+    if($("#Strawberry").is(":checked")){
+      $("#result").append("<br>You ordered Strawberry");
+    }
+    if($("#Blueberry").is(":checked")){
+      $("#result").append("<br>You ordered Blueberry");
+    }
+    if($("#Cherry").is(":checked")){
+      $("#result").append("<br>You ordered Cherry");
+    }
+    if($("#Coconut").is(":checked")){
+      $("#result").append("<br>You ordered Coconut");
+    }
+    if($("#Grape").is(":checked")){
+      $("#result").append("<br>You ordered Grape");
+    }
+    if($("#Guava").is(":checked")){
+      $("#result").append("<br>You ordered Guava");
+    }
+    if($("#Cucumber").is(":checked")){
+      $("#result").append("<br>You ordered Cucumber");
+    }
+    if($("#Avocado").is(":checked")){
+      $("#result").append("<br>You ordered Avocado");
+    }
+    if($("#Cranberry").is(":checked")){
+      $("#result").append("<br>You ordered Cranberry");
+    }
+    if($("#Mango").is(":checked")){
+      $("#result").append("<br>You ordered Mango");
+    }
+    if($("#Orange").is(":checked")){
+      $("#result").append("<br>You ordered Orange");
+    }
+    if($("#Papaya").is(":checked")){
+      $("#result").append("<br>You ordered Papaya");
+    }
+    if($("#Peach").is(":checked")){
+      $("#result").append("<br>You ordered Peach");
+    }
+    if($("#Pineapple").is(":checked")){
+      $("#result").append("<br>You ordered Pineapple");
+    }
+    if($("#Raspberry").is(":checked")){
+      $("#result").append("<br>You ordered Raspberry");
+    }
+    if($("#Pomegranate").is(":checked")){
+      $("#result").append("<br>You ordered Pomegranate");
+    }
+    if($("#Watermelon").is(":checked")){
+      $("#result").append("<br>You ordered Watermelon");
+    }
+    if($("#Cantalope").is(":checked")){
+      $("#result").append("<br>You ordered Cantalope");
+    }
+    if($("#Celery").is(":checked")){
+      $("#result").append("<br>You ordered Celery");
+    }
+    if($("#Cucumber").is(":checked")){
+      $("#result").append("<br>You ordered Cucumber");
+    }
+    if($("#Kale").is(":checked")){
+      $("#result").append("<br>You ordered Kale");
+    }
+    if($("#Broccoli").is(":checked")){
+      $("#result").append("<br>You ordered Broccoli");
+    }
+    if($("#Tomato").is(":checked")){
+      $("#result").append("<br>You ordered Tomato");
+    }
+    if($("#Pumkin").is(":checked")){
+      $("#result").append("<br>You ordered Pumkin");
+    }
+    if($("#Ginger").is(":checked")){
+      $("#result").append("<br>You ordered Ginger");
+    }
+    if($("#Spinach").is(":checked")){
+      $("#result").append("<br>You ordered Spinach");
+    }
+    if($("#Taro").is(":checked")){
+      $("#result").append("<br>You ordered Taro");
+    }
+    })
+</script>
+
+
+<!-- colors: look at your Pantone color book; Sunset Beach and Early Meadow,
+maybe birthday balloons-->
+</body>
+</html>

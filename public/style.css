@@ -1,0 +1,234 @@
+* {
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+body {
+  color: darkgrey;
+}
+
+h1, h2, h4 {
+    text-align: center;
+    font-size: 2em;
+}
+
+ul {
+  padding: 5%;
+  text-align: center;
+}
+
+li{
+  display: inline;
+  width: 600px;
+  padding: 5%;
+  margin: 5%;
+}
+
+/* Header */
+
+header{
+  background-color: darkgreen;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 auto;
+  z-index: 1;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    font-family: tahoma, sans-serif;
+}
+
+.picFruit img {
+  top: auto;
+  left: auto;
+  height: 100%;
+  width: 100%;
+  margin: 35px 0px;
+  padding: 0 auto;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+/* Nutrition Info */
+
+.facts p {
+  width: 600px;
+  text-align: center;
+}
+
+.facts {
+  padding: 13%;
+  margin: 3%;
+  background-color: #FEF5ED;
+}
+
+h3, .drinksNutrition{
+  text-align: center;
+  padding: 1%;
+}
+
+.drinksNutrition li{
+  margin: 5%;
+  padding: 10%;
+}
+
+.drinksNutrition{
+  background-color: #ffdab9;
+  margin: 3%;
+}
+
+
+
+/* the container */
+#fatsecret_container {
+border:10px solid #ffdab9;
+margin: auto;
+width: 45%;
+height: 25%;
+}
+
+/* heading in the canvas */
+#fatsecret_container .fatsecret_heading {
+color:#3472AB;
+}
+
+/* all buttons in the canvas */
+#fatsecret_container .fatsecret_button {
+border:1px solid #4592C0;
+background-color:#D8ECF7;
+}
+
+/* item separators */
+#fatsecret_container .fatsecret_borderbottom {
+border-bottom:1px solid #D8ECF7;
+}
+
+/* footer */
+.fatsecret_footer {
+  text-align:center;
+  padding:5px 0;
+}
+
+
+
+
+/* nutrition Facts 2 */
+.drinksNutrition a {
+  text-decoration: none;
+  color: skyblue;
+  font-family: tahoma, sans-serif;
+}
+
+/********** Customer Order **********/
+
+
+.customer {
+  background-color: rgba(242, 240, 161, 0.5);
+  margin: 3%;
+  padding: 3%;
+}
+
+.customerName, input {
+  width: 300px;
+}
+
+.thisName, #drinkSize {
+  padding: 6.5%;
+}
+
+select{
+  width: 250px;
+}
+
+fieldset {
+  width: 50%;
+  background-color: white;
+}
+
+fieldset size {
+  width: 50%;
+}
+/* The last checkout color */
+fieldset:nth-child(5){
+  background-color: rgba(255, 165, 0, .4);
+}
+
+
+
+/********** Checklist ********** /
+/* pick your flavor */
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    column-count: 2;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.orderBtn {
+  font-size: 15px;
+}
